@@ -36,11 +36,15 @@ def client_menu():
                     elif choices[1] == "no":
                         client_menu()
                     else:
-                        client = Client(server)
-                        request = '_'.join(choices)
-                        response = client.send_message(request)
-                        output = dict_menus[choices[0]]['submenu'][choices[1]]['final']
-                        print(f"[bold blue] {output}{response}")
+                        try:
+                            client = Client(server)
+                            request = '_'.join(choices)
+                            response = client.send_message(request)
+                            output = dict_menus[choices[0]]['submenu'][choices[1]]['final']
+                            print(f"[bold blue] {output}{response}")
+                        except Exception as exeption:
+                            print(f"[bold red]{exeption}")
+                            client_menu()
                 else:
                     print("[bold magenta]Invalid choice.. Plz retry again")
         else:
