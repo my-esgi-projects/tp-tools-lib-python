@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os, subprocess
 import argparse
 from rich import print
