@@ -34,6 +34,7 @@ Toolkit for have some informations about os in python
 
 Ps: Here you have two scripts to launch. First server script and client script after.
 
+
 ### Server script
 
 * Display help
@@ -41,4 +42,42 @@ Ps: Here you have two scripts to launch. First server script and client script a
     ```bash
         python3 server.py -h
     ```
-[server help](images/1-server_help.png)
+    ![server help](images/1-server_help.png)
+
+
+* Launch server script
+    ```bash
+        python3 server.py --host 0.0.0.0 --port 8989
+    ```
+
+### Client Script
+
+* Display help
+    ```bash
+        python3 client.py -h
+    ```
+    ![server help](images/2-client_help.png)
+
+* Launch client script
+    ```bash
+        python3 client.py --host 0.0.0.0 --port 8989
+    ```
+    ![server help](images/3-client_launch.png)
+
+
+
+## User-Groups creation script
+
+* Display help
+
+    ```bash
+        python3 user.py -h
+    ```
+    ![server help](images/4-user_help.png)
+
+* Launch script
+    ```bash
+        python3 user.py --file user_file/file.txt
+    ```
+
+
