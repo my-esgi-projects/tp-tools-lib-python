@@ -1,0 +1,4 @@
+toto:groupe1
+titi:groupe2
+chat:groupe1
+grosloup:groupe2
