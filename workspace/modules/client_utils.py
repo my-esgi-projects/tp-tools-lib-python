@@ -113,7 +113,7 @@ def display_menu(user_menu, color):
     for possibility in user_menu:
         print(f'[{color}]{user_menu[possibility]["label"]}')
 
-    choice = str(Prompt.ask("[bold white black]Enter your choice")).strip()
+    choice = str(Prompt.ask("[bold white]Enter your choice")).strip()
     if choice not in list(user_menu.keys()):
         return "invalid"
     else:
