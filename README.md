@@ -14,7 +14,7 @@ Toolkit for have some informations about OS in python
 * Clone the repository
 
 ```console
-bngameni@delbechirclara: ⇒ git clone https://github.com/my-esgi-projects/tp-tools-lib-python.git
+bngameni@delbechirclara:$ git clone https://github.com/my-esgi-projects/tp-tools-lib-python.git
 Cloning into 'tp-tools-lib-python'...
 remote: Enumerating objects: 130, done.
 remote: Counting objects: 100% (130/130), done.
@@ -27,13 +27,13 @@ Resolving deltas: 100% (50/50), done
 * Install requirements
 
 ```console
-bngameni@delbechirclara: ⇒ cd tp-tools-lib-python/
-bngameni@delbechirclara: ⇒ python3 -m pip install -r requirements.txt
+bngameni@delbechirclara:$ cd tp-tools-lib-python/
+bngameni@delbechirclara:$ python3 -m pip install -r requirements.txt
 ```
 
 * Enter in workspace directory
 ```console
-bngameni@delbechirclara: ⇒ cd workspace
+bngameni@delbechirclara:$ cd workspace
 ```
 &nbsp;
 
@@ -49,7 +49,7 @@ bngameni@delbechirclara: ⇒ cd workspace
 * Display help
 
 ```console
-bngameni@delbechirclara: ⇒ python server.py -h
+bngameni@delbechirclara:$ python server.py -h
 usage: server.py [-h] [-H HOST] [-P PORT]
 
 Launch without options will use localhost as default host and 8090 as defaut port
@@ -63,7 +63,7 @@ options:
 * Launch server script
 
 ```console
-bngameni@delbechirclara: ⇒ python3 server.py --host 0.0.0.0 --port 8989
+bngameni@delbechirclara:$ python3 server.py --host 0.0.0.0 --port 8989
 
 ```
 
@@ -75,7 +75,7 @@ bngameni@delbechirclara: ⇒ python3 server.py --host 0.0.0.0 --port 8989
 
 * Display help
 ```console
-bngameni@delbechirclara: ⇒ python client.py -h
+bngameni@delbechirclara:$ python client.py -h
 usage: client.py [-h] [-H HOST] [-P PORT]
 
 Launch without options will use localhost as default host and 8090 as defaut port
@@ -88,7 +88,7 @@ options:
 
 * Show network interface of client server
 ```console
-bngameni@ansible-dev: ⇒ ip a
+bngameni@ansible-dev:$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
@@ -118,7 +118,7 @@ bngameni@ansible-dev: ⇒ ip a
 
 * Launch client script
 ```console
-bngameni@delbechirclara: ⇒ python3 client.py --host 192.168.1.94 --port 8989
+bngameni@delbechirclara:$ python3 client.py --host 192.168.1.94 --port 8989
 1. Display OS Informations
 2. Display CPU Informations
 3. Display Informations About Sensors
@@ -168,7 +168,7 @@ Enter your choice: 0
          Are you sure to quit ?(yes/no)
 
 Enter your choice: yes
-bngameni@delbechirclara: ⇒ 
+bngameni@delbechirclara:$ 
 ```
 &nbsp;
 
