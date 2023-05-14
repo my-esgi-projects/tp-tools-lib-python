@@ -9,7 +9,9 @@ from lib.client_utils import handle_args, default_port, default_host
 
 
 class ThreadWithReturnValue(Thread):
-    def __init__(self, group=None, target=None, name=None, args=(), kwargs=None, *, daemon=None):
+    def __init__(
+        self, group=None, target=None, name=None, args=(), kwargs=None, *, daemon=None
+    ):
         Thread.__init__(self, group, target, name, args, kwargs, daemon=daemon)
 
         self._return = None
@@ -21,6 +23,7 @@ class ThreadWithReturnValue(Thread):
     def join(self):
         Thread.join(self)
         return self._return
+
 
 class Server:
     def __init__(self, host=default_host, port=default_port) -> None:
@@ -43,15 +46,15 @@ def main(port=default_port, host=default_host) -> None:
             client_socket, client_address = server_socket.accept()
             client_response = client_socket.recv(1024)
             choice = str(client_response.decode())
-        
+
             # create new thread
             thread = ThreadWithReturnValue(target=function_output, args=(choice,))
             thread.start()
             server_response = thread.join()
-            
+
             # send response of server to client
             client_socket.send(b"" + server_response.encode())
-    
+
             client_socket.close()
 
     except Exception as exception:
