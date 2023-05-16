@@ -327,6 +327,29 @@ options:
 &nbsp;
 ## Mini wireshark
 
+* Launch application
+```console
+bngameni@delbechirclara:$ sudo python3 wireshark.py
+Mini WireShark - Select protocol to filter:
+1. http filtering
+2. dns filtering
+3. tcp filtering
+4. udp filtering
+5. icmp filtering
+0. Quit
+Entrez le numéro du protocole : 3
+1. Scan avec scappy
+2. Scan with pyshark
+Entrez l'outils de filtrage: 1
+IP / TCP 10.0.16.13:51372 > 34.107.221.82:http PA / Raw
+IP / TCP 34.107.221.82:http > 10.0.16.13:51372 PA / Raw
+IP / TCP 10.0.16.13:51372 > 34.107.221.82:http A
+IP / TCP 10.0.16.13:51372 > 34.107.221.82:http PA / Raw
+IP / TCP 34.107.221.82:http > 10.0.16.13:51372 PA / Raw
+```
+&nbsp;
+> Ps: Others cases will be present later.
+
 &nbsp;
 ## User-Groups creation script
 
