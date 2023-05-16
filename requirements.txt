@@ -1,2 +1,6 @@
 psutil==5.9.4
 py-cpuinfo==9.0.0
+rich==12.6.0
+paramiko==3.1.0
+pyshark==0.6
+scapy==2.5.0
