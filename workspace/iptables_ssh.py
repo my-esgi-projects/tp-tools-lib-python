@@ -18,7 +18,7 @@ class ParmikoSsh:
             logging.basicConfig(
                 filename=log_file,
                 format="%(levelname)s %(asctime)s %(message)s",
-                level=logging.DEBUG
+                level=logging.DEBUG,
             )
 
             rules = Rules(file=file)
@@ -121,7 +121,10 @@ if __name__ == "__main__":
             hostname=args.host, username=args.username, password=args.password
         )
 
-        para.run(file=args.file, log_file=args.log if args.log is not None else './ssh_log.txt')
+        para.run(
+            file=args.file,
+            log_file=args.log if args.log is not None else "./ssh_log.txt",
+        )
 
     except Exception as exception:
         logging.error(f"{exception}")
